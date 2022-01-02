@@ -2,72 +2,24 @@
 <html>
 
 <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"
-        integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="UTF-8">
+    <link rel="icon" href="data:;base64,=">
+    <script src="js/p5.js"></script>
+    <script src="js/p5.sound.js"></script>
+    <script src="sketch.js"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
-
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
         body {
             margin: 0;
-            background-color: #ffe09d;
-        }
-
-        #container {
-            display: block;
-            width: 50%;
-            margin: auto;
-            padding: 1em;
-        }
-
-        p,
-        h1,
-        h2,
-        a,
-        button {
-            font-family: 'Roboto Slab', serif;
-            color: #2e2e2e;
-        }
-
-        h1 {
-            font-size: 40px;
-        }
-
-        p {
-            text-align: center;
-            margin-top: .1em;
-            margin-bottom: 2em
-        }
-
-        a {
-            margin: auto;
-            display: block;
-            font-size: 24px;
-            margin-bottom: 1.5em;
-            text-align: center;
+            overflow: hidden;
+            font-family: 'Comfortaa', Courier, monospace;
         }
     </style>
 
 </head>
 
 <body>
-    <div id="container">
-        <h1>Pixel Perfect</h1>
-        <img src="images/sampleDrawing.png" style="margin: auto; display: block; width: 90%">
-        <p style="text-align: left;">This project is inspired by pixel-sprite drawing applications like 'Aseprite' and
-            'Flipnote Studio' on the
-            Nintendo DSi. I wanted to recreate a desirable feature of aseprite, the "Pixel-perfect" setting. With this
-            setting, users are able to draw clean pixel lines.</p>
-        <img src="images/pixelPerfectExample.png" style="margin: auto; display: block; width: 40%">
-        <p>(A normal pixel line compared with a pixel-perfect line)</p>
-        <h2>This program is operated with the left mouse button. Press E to clear the canvas.</h2>
-        <a href="project/index.html">Run Program >></a>
-        <p>This application works best in full-screen, so it is linked externally.</p>
-        <img src="images/pixelPerfFunction.png" style="margin: auto; display: block; width: 90%">
-        <p>The code for the pixel-perfect function used in this project</p>
-        <img src="images/penToolCode.png" style="margin: auto; display: block; width: 90%">
-        <p>The code for the pen-tool, which addresses the issue of gaps in a drawn stroke</p>
-    </div>
+    <div id="activearea"></div>
 </body>
 
 </html>
